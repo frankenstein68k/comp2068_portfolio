@@ -1,4 +1,7 @@
 <!doctype html>
+
+<!--projects.html / Neil MacKenzie / COMP 2068 Personal Portfolio / lists current and past projects / HTML -->
+
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
@@ -40,35 +43,89 @@
 
 		<div id="container">
 			<header class="title">
-				<img src="img/Logo-v2.gif" alt="MacKenzie Logo" width="250" height="184">
-				<h1>Neil MacKenzie</h1>
-				<nav>
-					<ul>
-						<li id="active">
-							<a href="index.html">Home</a>
-						</li>
-						<li>
-							<a href="about_me.html">About Me</a>
-						</li>
-						<li>
-							<a href="projects.html">Projects</a>
-						</li>
-						<li>
-							<a href="services.html">Sevices</a>
-						</li>
-
-						<li>
-							<a href="contact_me.html">Contact Me</a>
-						</li>
-					</ul>
-				</nav>
+				<div>
+					<img src="img/Logo-v2.gif" alt="MacKenzie Logo" width="250" height="184">
+				</div>
+				<div>
+					<h1>Neil MacKenzie</h1>
+					<br>
+					<nav>
+						<ul id="simplenav">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="about_me.html">About Me</a>
+							</li>
+							<li>
+								<a class="active" href="projects.html">Projects</a>
+							</li>
+							<li>
+								<a href="services.html">Sevices</a>
+							</li>
+							<li>
+								<a href="contact_me.html">Contact Me</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</header>
 
-
 			<div id="main">
+				<div>
+					<p id="sonnenblume">
+						<a href="https://github.com/frankenstein68k/Sonnenblume---Arduino-"><img class="projects" src="img/sonnenblume.jpg"></a>
+						<h2>Sonnenblume</h2>
+						<h3>View the <a href="https://github.com/frankenstein68k/Sonnenblume---Arduino-">code</a> for an arduino powered solar tracker
+						<br>
+						Here is a <a href="http://youtu.be/Nqjzh3WYLVo"> link</a> to a video of it in action</h3>
+					</p>
+				</div>
 
+				<div>
+					<p id="website">
+						<a href="https://github.com/frankenstein68k/comp2068_portfolio"><img class="projects" src="img/personalPortfolioWebsite.png"></a>
+						<h2>This Website</h2>
+						<h3>View the <a href="https://github.com/frankenstein68k/comp2068_portfolio">code</a> for this very website!</h3>
+					</p>
+				</div>
+				<div>
+					<p id="atxpower">
+						<a href="http://www.robotshop.com/ca/productinfo.aspx?pc=RB-Spa-441&lang=en-US"><img class="projects" src="img/atxPowerBoard.jpg"></a>
+						<h2>Benchtop Power Board for ATX power supplies</h2>
+						<h3>This power board allows you to hook up standard and abundant computer power supplies as a hobby power supply. The four voltages available are 3.3V, 5V, 12V and -12V.
+						<br>
+						<a href="http://www.robotshop.com/ca/productinfo.aspx?pc=RB-Spa-441&lang=en-US">Link to a Canadian supplier</a></h3>
+					</p>
+				</div>
+				<div>
+					<p id="barrielong">
+						<a href="http://youtu.be/uBhtrYXqIH4"><img class="projects" src="img/BarrieLong.png"></a>
+						<h2>Time Lapse movie of driving from Newmarket to Barrie</h2>
+						<h3>Driving from Newmarket to Barrie the long way, avoiding Highway 400 and taking Yonge Street
+						<br>
+						<a href="http://youtu.be/uBhtrYXqIH4">Link to the video</a></h3>
+					</p>
+				</div>
+				<div>
+					<p id="barriesnow">
+						<a href="http://youtu.be/t_sim8e-1IU"><img class="projects" src="img/BarrieSnowy.png"></a>
+						<h2>Time Lapse movie of driving from Barrie to Newmarket</h2>
+						<h3>Driving from Barrie to Newmarket in snowy weatehr in the afternoon
+						<br>
+						<a href="http://youtu.be/t_sim8e-1IU">Link to the video</a></h3>
+					</p>
+				</div>
+				<div>
+					<p id="toronto">
+						<a href="http://youtu.be/Llly3_LtW7o"><img class="projects" src="img/Toronto.png"></a>
+						<h2>Time Lapse movie of driving from Newmarket to Toronto</h2>
+						<h3>Driving out of Newmarket with Highway 9 and entering Highway 400
+						<br>
+						<a href="http://youtu.be/Llly3_LtW7o">Link to the video</a></h3>
+					</p>
+				</div>
 			</div>
-
 
 			<footer class="footer">
 				<h4>Copyright Neil MacKenzie 2013</h4>

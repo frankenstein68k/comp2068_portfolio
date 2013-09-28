@@ -1,10 +1,14 @@
 <!doctype html>
+
+<!--index.html / Neil MacKenzie / COMP 2068 Personal Portfolio / homepage for the website / HTML -->
+
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
 <!--[if gt IE 8]><!-->
+
 <html class="no-js" lang="en">
 	<!--<![endif]-->
 	<head>
@@ -40,29 +44,34 @@
 
 		<div id="container">
 			<header class="title">
-				<img src="img/Logo-v2.gif" alt="MacKenzie Logo" width="250" height="184">
-				<h1>Neil MacKenzie</h1>
-				<nav>
-					<ul>
-						<li id="active">
-							<a href="index.html">Home</a>
-						</li>
-						<li>
-							<a href="about_me.html">About Me</a>
-						</li>
-						<li>
-							<a href="projects.html">Projects</a>
-						</li>
-						<li>
-							<a href="services.html">Sevices</a>
-						</li>
-						<li>
-							<a href="contact_me.html">Contact Me</a>
-						</li>
-					</ul>
-				</nav>
+				<div>
+					<img src="img/Logo-v2.gif" alt="MacKenzie Logo" width="250" height="184">
+				</div>
+				<div>
+					<h1>Neil MacKenzie</h1>
+					<br>
+					<nav>
+						<ul id="simplenav">
+							<li>
+								<a class="active" href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="about_me.html">About Me</a>
+							</li>
+							<li>
+								<a href="projects.html">Projects</a>
+							</li>
+							<li>
+								<a href="services.html">Sevices</a>
+							</li>
+							<li>
+								<a href="contact_me.html">Contact Me</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</header>
-			<div id="main" role="main">
+			<div id="main">
 				<article>
 					<header>
 						<h1>Welcome the my website, I hope you like it!</h1>
@@ -82,19 +91,92 @@
 							</ul>
 						</p>
 					</header>
-					<section>
-						<h2>Featured Work</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.
-						</p>
-					</section>
 
 				</article>
 
+				<article>
+					<section id"featured">
+						<h2>Featured Work</h2>
+						<p>
+							<!-- This slider is from a template by Joshua Hibbert and can be found at http://cssdeck.com/labs/pure-css-slider-target-->
+							<div class="slider">
+								<ul class="frames">
+									<li id="one" class="slide">
+										<a href="projects.html#sonnenblume"> <img src="img/sonnenblume.jpg" alt="Slide 1">
+										<nav>
+											<a class="prev" href="#six">&larr;</a>
+											<a class="next" href="#two">&rarr;</a>
+										</nav> </a>
+									</li>
+									<li id="two" class="slide">
+										<a href="projects.html#barrielong"> <img src="img/BarrieLong.png" alt="Slide 2">
+										<nav>
+											<a class="prev" href="#one">&larr;</a>
+											<a class="next" href="#three">&rarr;</a>
+										</nav> </a>
+									</li>
+									<li id="three" class="slide">
+										<a href="projects.html#atxpower"> <img src="img/atxPowerBoard.jpg" alt="Slide 3">
+										<nav>
+											<a class="prev" href="#two">&larr;</a>
+											<a class="next" href="#four">&rarr;</a>
+										</nav> </a>
+									</li>
+									<li id="four" class="slide">
+										<a href="projects.html#barriesnow"> <img src="img/BarrieSnowy.png" alt="Slide 4">
+										<nav>
+											<a class="prev" href="#three">&larr;</a>
+											<a class="next" href="#five">&rarr;</a>
+										</nav> </a>
+									</li>
+									<li id="five" class="slide">
+										<a href="projects.html#website"> <img src="img/personalPortfolioWebsite.png" alt="Slide 5">
+										<nav>
+											<a class="prev" href="#four">&larr;</a>
+											<a class="next" href="#six">&rarr;</a>
+										</nav> </a>
+									</li>
+									<li id="six" class="slide">
+										<a href="projects.html#toronto"> <img src="img/Toronto.png" alt="Slide 6">
+										<nav>
+											<a class="prev" href="#five">&larr;</a>
+											<a class="next" href="#one">&rarr;</a>
+										</nav> </a>
+									</li>
+									<li class="quicknav">
+										<ul>
+											<li>
+												<a href="#one"></a>
+											</li>
+											<li>
+												<a href="#two"></a>
+											</li>
+											<li>
+												<a href="#three"></a>
+											</li>
+											<li>
+												<a href="#four"></a>
+											</li>
+											<li>
+												<a href="#five"></a>
+											</li>
+											<li>
+												<a href="#six"></a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</p>
+					</section>
+				</article>
+				<article>
+					<h4 id="calltoaction"><a class="link" href="projects.html">View more work!</a></h4>
+				</article>
 				<aside class="aside">
-					<h3>This is Where my Keep Connected panel will go </h3>
+					<h3>Keep Connected</h3>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.
+						Feel free to follow me on <a href="https://twitter.com/frankenstein68k">Twitter</a>, <a href="ca.linkedin.com/pub/neil-mackenzie/35/4a6/925/">LinkedIn</a> and <a href="https://github.com/frankenstein68k">GitHub</a>
 					</p>
 				</aside>
 			</div>
