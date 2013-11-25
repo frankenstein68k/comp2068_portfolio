@@ -5,6 +5,13 @@
 /*Neil edits
  */
 
+/*
+ * Webfonts
+ */
+* {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
 body, button, input, select, textarea {
 	font-family: sans-serif;
 	color: #222;
